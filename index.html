@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Robostics </title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background: #333;
+        color: #fff;
+        padding: 1em 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+              
+    }
+    
+    nav .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 0 1em;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    section {
+        padding: 2em 0;
+        text-align: center;
+    }
+    
+    .home {
+        background: url('../images/office.jpg') no-repeat center center/cover;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: -20px;
+    }
+    
+    .services, .portfolio, .team, .contact {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+    
+    .service-item, .portfolio-item, .team-member {
+        display: inline-block;
+        width: 30%;
+        margin: 1.5%;
+        text-align: center;
+    }
+   .portfolio-item img, .team-member img {
+        width: 45%;
+        height: auto;
+       
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form label, form input, form textarea, form button {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+    
+    form button {
+        width: 50%;
+        padding: 0.5em;
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background: #555;
+    }
+    
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+    }
+    .back
+    {
+        background-position: center;
+        background-size: cover;
+        background-image: url("background.jpg");
+         min-height: 100%;
+    }
+    .textheading
+    {
+        margin-top: 400px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">R O B O S T I C S </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="">LOGIN / Sign up</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home">
+        <header class="back" id="home">
+            <div  class="textheading">
+        <h1>Welcome to Robostics </h1>
+        <p>We develop innovative software solutions for your business needs.</p>
+        </div>
+    </header>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="web-development.jpg" alt="Web Development"style=" width: 45%;,height: 45%;">
+            <h3>Web Development</h3>
+            <p>Building responsive and high-quality websites.</p>
+        </div>
+        <div class="service-item">
+            <img src="mobile app.png" alt="Mobile App Development"style=" width: 45%;,height: 10%;">
+            <h3>Mobile App Development</h3>
+            <p>Creating user-friendly mobile applications.</p>
+        </div>
+        <div class="service-item">
+            <img src="cs.jpg" alt="Custom Software Solutions"style=" width: 45%;,height: 45%;">
+            <h3>Custom Software Solutions</h3>
+            <p>Developing tailored software to meet your business requirements.</p>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="krisiya.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Our Client website</p>
+            <a href="https://krisiya.w3spaces.com/"target="blank">KRISIYA</a>
+        </div>
+        <div class="portfolio-item">
+            <img src="inven.png" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>we are working on new project of inventery Management .</p>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="images.png" alt="Team Member 1">
+            <h3>DUDHAKIYA PRIT K.</h3>
+            <p>236210307087</p>
+            <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+            <img src="images.png" alt="Team Member 2">
+            <h3>PRAJAPATI CHIRAG G.</h3>
+            <p>236210307084</p>
+            <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+            <img src="images.png" alt="Team Member 2">
+            <h3>Jadeja Pruthvirajsinh V.</h3>
+            <p>236210307036</p>
+            <p>Lead Developer</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Copyright © 2024 ROBOSTICS</p>
+    </footer>
+    <script >
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message!');
+});
+
+    </script>
+</body>
+</html>
